@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Download Form</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            background-image: url(./images/work-2.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+        }
+        .resume_form{
+            color: rgb(19, 247, 34);
+            width: 60rem;
+            height: 40rem;
+            margin-left: 14rem;
+            margin-top: 3rem;
+            text-align: center;
+            /* background-color: aqua; */
+        }
+
+        h2{
+            font-size: 2.5rem;
+        }
+
+        p{
+            font-size: 2rem;
+            color: chocolate;
+        }
+
+
+        input{
+            width: 30rem;
+            height: 3rem;
+            border: none;
+            background:transparent;
+            color: aliceblue;
+            outline: 2px solid rgb(55, 246, 55);
+            margin-top: 3rem;
+            text-align: center;
+            border: 2px;
+        }
+        input::placeholder{
+            color: aliceblue;
+            font-size: 14px;
+        }
+
+        input:hover::placeholder{
+            color: black;
+            font-size: 14px;
+        }
+
+        input:hover{
+           background: aliceblue;
+           color: black;
+           outline: none;
+        }
+
+        textarea{
+            width: 30rem;
+            height: 8rem;
+            margin-top: 3rem;
+            background:transparent;
+            color: aliceblue;
+            outline: 2px solid rgb(55, 246, 55);
+            text-align: center;
+            border-radius: 2px;
+        }
+
+        textarea::placeholder{
+            font-size: 14px;
+            color: aliceblue;
+        }
+
+        textarea:hover{
+             background: aliceblue;
+             color: black;
+             outline: none;
+ 
+        }
+
+        textarea:hover::placeholder{
+            color: black;
+            font-size: 14px;
+        }
+
+        .button{
+            margin-top: 3rem;
+        }
+
+        .btn-submit{
+            width: 8rem;
+            height: 2rem;
+            background: rgb(123, 4, 74);
+            outline: none;
+            border: none;
+            border-radius: 4px;
+            color: rgb(232, 241, 45);
+        }
+
+        .btn-submit:hover{
+            background: rgb(16, 231, 16);
+            color: aliceblue;
+        }
+
+        .btn-reset{
+            width: 8rem;
+            height: 2rem;
+            background: rgb(27, 224, 246);
+            outline: none;
+            border: none;
+            border-radius: 4px;
+            color: rgb(232, 241, 45);
+            margin-left: 5rem;
+        }
+
+        .btn-reset:hover{
+            background: rgb(231, 16, 16);
+            color: aliceblue;
+        }
+
+        @media screen and (max-width:600px){
+            body{
+                width: 81rem;
+                height: 142rem;
+                align-items: center;
+            }
+          
+
+            input{
+            width: 60rem;
+            height: 4rem;
+            border: none;
+            margin-top: 6rem;
+          
+        }
+ 
+
+        textarea{
+            width: 60rem;
+            height: 10rem;
+           margin-top: 6rem;
+        }
+
+        
+
+       
+
+        
+
+        .button{
+            margin-top: 3rem;
+        }
+
+        .btn-submit{
+            width: 10rem;
+            height: 3rem;
+        }
+
+         
+
+        .btn-reset{
+            width: 10rem;
+            height: 3rem;
+        }
+
+ 
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    <section class="resume_form">
+      <h2>TO Download My Resume</h2>
+      <p>Fill this form to check my resume or get my resume on your email.</p>
+
+      <form action="https://formspree.io/f/mwkdbjjk" method="post">
+        <div class="name">
+            <input type="text" name="name" placeholder="Please Enter Name" required>
+        </div>
+        <div class="email">
+            <input type="text" name="email" placeholder="Please Enter Email" required>
+        </div>
+        <div class="number">
+            <input type="text" name="number" placeholder="Please Enter What's app Number" required>
+        </div>
+
+        <div class="address">
+            <textarea name="address" id="" cols="30" rows="10" placeholder="Please Enter your address" required></textarea>
+        </div>
+
+        <div class="button">
+            <button type="submit" class="btn-submit" onclick="redirectFunction()">SUBMIT</button>
+            <button type="reset" class="btn-reset">RESET</button>
+        </div>
+      </form>
+
+        
+
+    </section>
+
+
+    <script src="./main.js"></script>
+    
+</body>
+</html>
